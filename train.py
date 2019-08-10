@@ -22,10 +22,12 @@ def main(args):
 
     # Define model
     model = nn.DataParallel(FastSpeech()).to(device)
+    print("FastSpeech Has Been Defined")
     if not hp.pre_target:
         tacotron2 = get_tacotron2()
+        print("Tacotron2 Has Been Defined")
         
-    print("FastSpeech and Tacotron2 Have Been Defined")
+        
     num_param = sum(param.numel() for param in model.parameters())
     print('Number of FastSpeech Parameters:', num_param)
 
