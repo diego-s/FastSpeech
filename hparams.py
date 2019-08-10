@@ -16,7 +16,7 @@ use_lws = False
 text_cleaners = ['english_cleaners']
 
 # Model
-word_vec_dim = 16 #384
+word_vec_dim = 384
 encoder_n_layer = 6
 encoder_head = 2
 encoder_conv1d_filter_size = 128 #1536
